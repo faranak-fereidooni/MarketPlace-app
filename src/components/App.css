@@ -1,0 +1,157 @@
+/* css for Header component */
+.header-container {
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0px 2px 1px rgb(225 222 222);
+  display: flex;
+  flex-direction: "column";
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.header-innerContainer {
+  display: flex;
+  flex: column noWrap;
+  padding: 1rem 0;
+}
+@media only screen and (max-width: 1280px) {
+  .header-innerContainer {
+    padding: 1rem 2rem 0 2rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .header-innerContainer {
+    padding: 1rem 2rem 0 2rem;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .header-innerContainer {
+    padding: 1rem 0rem;
+  }
+}
+.header-logo {
+  height: 25px;
+  margin-left: 1.5rem;
+  margin-right: 1rem;
+  margin-top: -4px;
+  width: 25px;
+}
+.header-name {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: -4px;
+}
+.faCartShopping {
+  float: right;
+  font-size: 20px;
+  margin-right: 1.5rem;
+  margin-top: 18px;
+  position: relative;
+}
+
+.countItemsCartShopping {
+  background: #fa0303;
+  border-radius: 50%;
+  color: #fff;
+  padding: 1px 3px;
+  position: absolute;
+  right: 20px;
+  top: 7px;
+}
+.noCountItemsCartShopping {
+  background: #ffff;
+}
+/* ******************************************************** */
+
+/* css for ProductCard component */
+.card {
+  border-bottom: 1px solid #ccdd;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+  margin: 0 auto;
+  width: 16rem;
+}
+@media only screen and (min-width: 1280px) {
+  .card {
+    width: 22rem;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .card {
+    width: 20rem;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .card {
+    width: 18rem;
+  }
+}
+@media only screen and (max-width: 280px) {
+  .card {
+    width: 16rem;
+  }
+}
+.card-img {
+  width: 100%;
+}
+.content {
+  padding: 1rem;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+.card-title {
+  font-weight: 400;
+  margin-top: 0;
+}
+.card-span {
+  font-size: 24px;
+}
+.text {
+  color: rgba(0, 0, 0, 0.54);
+  margin-bottom: 3.5rem;
+}
+
+#faCartPlus {
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  float: right;
+  font-size: 22px;
+  padding: 1.1rem;
+  transition: all 0.2s ease-in;
+}
+#faCartPlus:hover {
+  background-color: #eee;
+  border-radius: 50%;
+}
+/* ************************************************************** */
+/* css for ProductsList component */
+.container-productsList {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  padding: 1.6rem;
+}
+@media only screen and (min-width: 1280px) {
+  .container-productsList {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .container-productsList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 912px) {
+  .container-productsList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 540px) {
+  .container-productsList {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* ************************************************************** */

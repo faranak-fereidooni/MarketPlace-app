@@ -1,0 +1,86 @@
+{
+  "products": [
+    {
+      "id": "e25285ec-c1ea-478c-a827-78ae18b741d0",
+      "name": "Kettle",
+      "price": "$45",
+      "describe": "Black stove-top kettle",
+      "imgUrl": "../img/product1.png"
+    },
+    {
+      "id": "8908e1de-6eeb-4168-8ae0-65e2a9abae52",
+      "name": "Book",
+      "price": "$14",
+      "describe": "Book on grid systems",
+      "imgUrl": "../img/product2.png"
+    },
+    {
+      "id": "7e8d1343-23a5-41b3-a714-31822b866e8a",
+      "name": "Coffee",
+      "price": "$7.5",
+      "describe": "Whole bean espresso can",
+      "imgUrl": "../img/product3.png"
+    },
+    {
+      "id": "ff856124-dccb-4d5e-83fd-8753f9c9afcf",
+      "name": "Lamp",
+      "price": "$90",
+      "describe": "Wooden table lamp",
+      "imgUrl": "../img/product4.png"
+    },
+    {
+      "id": "5332173b-ceef-46e1-ae2c-d136dc1d0680",
+      "name": "Headphones",
+      "price": "$60",
+      "describe": "Seafoam wireless headphones",
+      "imgUrl": "../img/product5.png"
+    },
+    {
+      "id": "0869e024-6aa5-4b3e-8049-428f2f7fddb6",
+      "name": "Massenger bag",
+      "price": "$80",
+      "describe": "Black roll-top backpack",
+      "imgUrl": "../img/product6.png"
+    },
+    {
+      "id": "d13de138-67fe-4b5f-bdf8-93318772335d",
+      "name": "Keyboard",
+      "price": "$100",
+      "describe": "Black magic keyboard",
+      "imgUrl": "../img/product7.png"
+    },
+    {
+      "id": "4ca4bb23-2540-4c0e-a202-bd7eda52264c",
+      "name": "Mouse",
+      "price": "$50",
+      "describe": "Black magic mouse",
+      "imgUrl": "../img/product8.png"
+    }
+  ],
+  "baskets": [
+    {
+      "id": "e25285ec-c1ea-478c-a827-78ae18b741d0",
+      "count": 17
+    },
+    {
+      "id": "8908e1de-6eeb-4168-8ae0-65e2a9abae52",
+      "count": 9
+    },
+    {
+      "id": "7e8d1343-23a5-41b3-a714-31822b866e8a",
+      "count": 17
+    },
+    {
+      "id": "ff856124-dccb-4d5e-83fd-8753f9c9afcf",
+      "count": 6
+    },
+    {
+      "id": "4ca4bb23-2540-4c0e-a202-bd7eda52264c",
+      "count": 7
+    },
+    {
+      "id": "d13de138-67fe-4b5f-bdf8-93318772335d",
+      "count": 6
+    }
+  ]
+}

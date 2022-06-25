@@ -1,3 +1,12 @@
+:root{
+  --btn-primary:#ff0022ad;
+  --btn-secondary:#2e0092;
+  --btn-tritiary:#fff;
+  --btn-tritiary-hover:#eee;
+  --btn-primary-hover:#fe3751ad;
+  --btn-secondary-hover:#3e0ea5;
+}
+/* ****************************************************** */
 /* css for Header component */
 .header-container {
   border-bottom: 1px solid #ccc;
@@ -12,8 +21,14 @@
   flex: column noWrap;
   padding: 1rem 0;
 }
+.header-cart-container{
+  padding: 1rem 0;
+}
 @media only screen and (max-width: 1280px) {
   .header-innerContainer {
+    padding: 1rem 2rem 0 2rem;
+  }
+  .header-cart-container{
     padding: 1rem 2rem 0 2rem;
   }
 }
@@ -21,17 +36,23 @@
   .header-innerContainer {
     padding: 1rem 2rem 0 2rem;
   }
+  .header-cart-container{
+    padding: 1rem 2rem 0 2rem;
+  }
 }
 @media only screen and (max-width: 540px) {
   .header-innerContainer {
     padding: 1rem 0rem;
   }
+  .header-cart-container{
+    padding: 1rem 0rem;
+  }
 }
+
 .header-logo {
   height: 25px;
   margin-left: 1.5rem;
   margin-right: 1rem;
-  margin-top: -4px;
   width: 25px;
 }
 .header-name {
@@ -42,19 +63,23 @@
 .faCartShopping {
   float: right;
   font-size: 20px;
-  margin-right: 1.5rem;
-  margin-top: 18px;
   position: relative;
+  margin-right: 1.5rem;
 }
 
 .countItemsCartShopping {
-  background: #fa0303;
+  background: var(--btn-primary);
   border-radius: 50%;
   color: #fff;
-  padding: 1px 3px;
+  padding: 1px 6px;
   position: absolute;
-  right: 20px;
-  top: 7px;
+  right: 17px;
+  top: 4px;
+}
+@media only screen and (min-width:768px){
+  .countItemsCartShopping{
+    right: 50px;
+  }
 }
 .noCountItemsCartShopping {
   background: #ffff;
@@ -70,17 +95,12 @@
   margin: 0 auto;
   width: 16rem;
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1281px) {
   .card {
     width: 22rem;
   }
 }
-@media only screen and (max-width: 1023px) {
-  .card {
-    width: 20rem;
-  }
-}
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 1280px) {
   .card {
     width: 18rem;
   }
@@ -113,7 +133,7 @@
 }
 
 #faCartPlus {
-  background-color: #fff;
+  background-color: var(--btn-tritiary);
   border-radius: 50%;
   cursor: pointer;
   float: right;
@@ -122,7 +142,7 @@
   transition: all 0.2s ease-in;
 }
 #faCartPlus:hover {
-  background-color: #eee;
+  background-color: var(--btn-tritiary-hover);
   border-radius: 50%;
 }
 /* ************************************************************** */
@@ -153,5 +173,86 @@
   .container-productsList {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+/* ************************************************************** */
+/* css for BasketCard component */
+.btn{
+  border:none;
+  border-radius: 5px;
+  transition:all 0.2s ease-in;
+  cursor: pointer;
+}
+.btn-product{
+background:var(--btn-tritiary);
+margin-right: 1rem;
+padding: 0.5rem 1.5rem;
+}
+.btn-product:hover{
+  background: var(--btn-tritiary-hover);
+}
+.peoductCount{
+  margin-right: 1rem;
+}
+.btn-remove{
+  background:var(--btn-primary);
+  color:var(--btn-tritiary);
+  padding: 0.8rem 1rem;
+  float: right;
+}
+.btn-remove:hover{
+  background:var(--btn-primary-hover);
+}
+/* ************************************************************** */
+/* css for ShoppingCard component */
+.container-basketCard{
+  display:grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  padding: 1.6rem;
+}
+@media only screen and (min-width: 1280px) {
+  .container-basketCard {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media only screen and (max-width: 1024px) {
+.container-basketCard{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 912px) {
+.container-basketCard{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 540px) {
+.container-basketCard{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.header-shoppingCard{
+  padding: 1rem 2rem 0;
+}
+.btn-container{
+  float:right;
+  padding: 2rem 1rem;
+}
+.btn-emptyCard{
+  background: var(--btn-primary);
+  color:var(--btn-tritiary);
+  padding: 1rem 1.5rem;
+  margin-right: 1rem;
+}
+.btn-emptyCard:hover{
+background: var(--btn-primary-hover);
+}
+.btn-checkout{
+  background:var(--btn-secondary);
+  color:var(--btn-tritiary);
+  padding: 1rem 1.5rem;
+}
+.btn-checkout:hover{
+background: var(--btn-secondary-hover);
 }
 /* ************************************************************** */
